@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./main.js" defer></script>
+    <script src="./utils/audioUtils.js"></script>
+    <title>PhaseVocoder</title>
+</head>
+<body>
+    refresh page to reset
+    <div id="option-wrapper" class="wrapper">
+        <div id="record-wrapper">
+            set record duration
+            <button id="record-btn" class="btn">Record</button>
+            <input type="range" min="0" max="60" value="5" id="record-time-input" class="input">
+            <h3 id="record-time-display" class="display">5s</h3>
+        </div>
+        <h2 style="margin-top: 80px; color: white;  ">OR</h2>
+        <div id="upload-file-wrapper">
+            set percent of clip you want to be processed
+            <input type="file" id="file-input" class="btn">
+        </div>
+    </div>
+    <div id="processing" class="wrapper" style="display: none;">
+        <h2>processing...</h2>
+    </div>
+    <div id="process-menu" class="wrapper" style="display: none;">
+        shift semitones
+        <input type="range" min="-14" max="14" value="0" id="scale-amt-input">
+        <div id="semitone-shift-display"></div>
+        <button id="process-btn">Process</button>
+    </div>
+</body>
+</html>

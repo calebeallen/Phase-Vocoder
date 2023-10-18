@@ -1,0 +1,65 @@
+*{
+    font-family: Arial;
+}
+
+.wrapper{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 15px;
+    background-color: darkgray;
+    text-align: center;
+}
+
+#option-wrapper{
+    left: 50%;
+    width: 600px;
+    height: 200px;
+    margin-left: -300px;
+    margin-top: -210px;
+}
+
+#record-wrapper{
+    position: absolute;
+    width: 250px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    top: 25px;
+    left: 180px;
+    margin-left: -160px;
+}
+
+.input{
+    position: absolute;
+    left: 30px;
+    top: 40px;
+}
+
+.display{
+    position: absolute;
+    right: 60px;
+    top: 20px;
+}
+
+.btn{
+    position: absolute;
+    bottom: 40px;
+    left: 95px;
+}
+
+#upload-file-wrapper{
+    position: absolute;
+    width: 250px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    top: 25px;
+    right: 25px;
+    margin-left: -160px;
+}
+
+#processing{
+    margin-left: -100px;
+    margin-top: -200px;
+}
